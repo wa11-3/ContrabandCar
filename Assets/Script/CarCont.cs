@@ -1,19 +1,13 @@
-using Unity.Netcode;
-using UnityEngine;
+using System;
 using System.Collections;
-using UnityEngine.InputSystem;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class CarController : NetworkBehaviour
+public class CarCont : MonoBehaviour
 {
-
     private float horizontalInput, verticalInput;
     private float currentSteerAngle, currentbreakForce;
     private bool isBreaking;
-
-    public bool isStarted;
-    public bool isCounting;
-
-    private CardInputMap cardInput;
 
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
@@ -26,34 +20,21 @@ public class CarController : NetworkBehaviour
     [SerializeField] private Transform frontLeftWheelTransform, frontRightWheelTransform;
     [SerializeField] private Transform rearLeftWheelTransform, rearRightWheelTransform;
 
-    public Vector3 pointC;
-    public Vector3 impulseC;
-    public Vector3 normalC;
-
-    private void Awake()
-    {
-        cardInput = new CardInputMap();
-        cardInput.Card.Enable();
-    }
-
     private void FixedUpdate()
     {
-        if (IsOwner)
-        {
-            GetInput();
-            HandleMotor();
-            HandleSteering();
-            UpdateWheels();
-        }
+        GetInput();
+        HandleMotor();
+        HandleSteering();
+        UpdateWheels();
     }
 
     private void GetInput()
     {
         // Steering Input
-        horizontalInput = cardInput.Card.Steer.ReadValue<float>();
+        horizontalInput = Input.GetAxis("Horizontal");
 
         // Acceleration Input
-        verticalInput = cardInput.Card.SpeedUp.ReadValue<float>();
+        verticalInput = Input.GetAxis("Vertical");
 
         // Breaking Input
         isBreaking = Input.GetKey(KeyCode.Space);

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2203327440898261105}
   - component: {fileID: 4442152857650934590}
   - component: {fileID: 8198214461082779523}
-  - component: {fileID: 3184039952358087426}
   m_Layer: 0
   m_Name: Police Muscle wheel rear left
   m_TagString: Untagged
@@ -85,28 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3184039952358087426
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098149276543929598}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 550985311009637183, guid: 8e5a9bb7e199842bf9fe032d9ce1ca60, type: 3}
 --- !u!1 &1901985606279003442
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +242,6 @@ GameObject:
   - component: {fileID: 2172195248298595001}
   - component: {fileID: 4899097167660356360}
   - component: {fileID: 3198461103764117184}
-  - component: {fileID: 4490503987240304396}
   m_Layer: 0
   m_Name: Police Muscle wheel rear right
   m_TagString: Untagged
@@ -339,28 +315,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4490503987240304396
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3494680785332933684}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4371073394073868127, guid: 8e5a9bb7e199842bf9fe032d9ce1ca60, type: 3}
 --- !u!1 &4035722148950186356
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +326,6 @@ GameObject:
   - component: {fileID: 8341184862661011707}
   - component: {fileID: 7302941074503524148}
   - component: {fileID: 8974597250318142952}
-  - component: {fileID: 275526609655838334}
   m_Layer: 0
   m_Name: Police Muscle wheel front right
   m_TagString: Untagged
@@ -446,28 +399,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &275526609655838334
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4035722148950186356}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8887113469979916700, guid: 8e5a9bb7e199842bf9fe032d9ce1ca60, type: 3}
 --- !u!1 &5039826506515729569
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,13 +442,13 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.08
   m_SuspensionSpring:
-    spring: 140000
+    spring: 135000
     damper: 10000
     targetPosition: 0.5
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -588,7 +519,7 @@ WheelCollider:
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -731,7 +662,7 @@ WheelCollider:
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -784,6 +715,89 @@ Transform:
   m_Father: {fileID: 7005658863652855282}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7497103905050422153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7275225919182815281}
+  - component: {fileID: 5594296392149119475}
+  - component: {fileID: 1491579831380240283}
+  m_Layer: 21
+  m_Name: ElementMiniMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7275225919182815281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497103905050422153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 7005658863652855282}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5594296392149119475
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497103905050422153}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1491579831380240283
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497103905050422153}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 04e1deabead78437ea33ccdd84933172, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7670414335896192840
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,13 +808,14 @@ GameObject:
   m_Component:
   - component: {fileID: 7005658863652855282}
   - component: {fileID: 9120572197772238370}
+  - component: {fileID: 6190209421074872561}
   - component: {fileID: 1789958889994717896}
   - component: {fileID: 6892847728481004097}
   - component: {fileID: 8992269480032347034}
   - component: {fileID: 2798876619276350807}
   m_Layer: 0
   m_Name: Police Muscle
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,6 +841,7 @@ Transform:
   - {fileID: 5667268629818134384}
   - {fileID: 4985231405902845321}
   - {fileID: 8618762473267475497}
+  - {fileID: 7275225919182815281}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -856,6 +872,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6190209421074872561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7670414335896192840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822e58b9bb71a49699495e1ec396addf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followCamera: {fileID: 8797215504171824436}
+  virtualCamera: {fileID: 6736178044173909347}
+  isStarted: 0
+  isCounting: 0
+  pointC: {x: 0, y: 0, z: 0}
+  impulseC: {x: 0, y: 0, z: 0}
+  normalC: {x: 0, y: 0, z: 0}
+  canvas: {fileID: 0}
+  audioBeep: {fileID: 0}
 --- !u!114 &1789958889994717896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,10 +905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad36d374b7cc4bc9a10ec30c043dca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followCamera: {fileID: 8797215504171824436}
-  virtualCamera: {fileID: 6736178044173909347}
-  motorForce: 80
-  breakForce: 80
+  isStarted: 0
+  isCounting: 0
+  motorForce: 150
+  breakForce: 150
   maxSteerAngle: 20
   frontLeftWheelCollider: {fileID: 390585217055747469}
   frontRightWheelCollider: {fileID: 8122277273434761907}
@@ -881,6 +918,9 @@ MonoBehaviour:
   frontRightWheelTransform: {fileID: 8341184862661011707}
   rearLeftWheelTransform: {fileID: 2203327440898261105}
   rearRightWheelTransform: {fileID: 2172195248298595001}
+  pointC: {x: 0, y: 0, z: 0}
+  impulseC: {x: 0, y: 0, z: 0}
+  normalC: {x: 0, y: 0, z: 0}
 --- !u!114 &6892847728481004097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -930,7 +970,7 @@ MonoBehaviour:
   UseHalfFloatPrecision: 0
   InLocalSpace: 0
   Interpolate: 1
-  SlerpPosition: 0
+  SlerpPosition: 1
 --- !u!114 &2798876619276350807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,7 +1089,6 @@ GameObject:
   - component: {fileID: 2083397065443418984}
   - component: {fileID: 3236689838942245484}
   - component: {fileID: 7552693076818864042}
-  - component: {fileID: 7464474622453380339}
   m_Layer: 0
   m_Name: Police Muscle wheel front left
   m_TagString: Untagged
@@ -1123,28 +1162,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7464474622453380339
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8225241100324514537}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2099692584238862809, guid: 8e5a9bb7e199842bf9fe032d9ce1ca60, type: 3}
 --- !u!1 &8797215504171824436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1235,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1321,7 +1338,7 @@ WheelCollider:
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1

@@ -138,13 +138,13 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.08
   m_SuspensionSpring:
-    spring: 350000
-    damper: 35000
+    spring: 200000
+    damper: 45000
     targetPosition: 0.5
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -284,7 +284,6 @@ GameObject:
   - component: {fileID: 5752592076811791128}
   - component: {fileID: 7987706054425236631}
   - component: {fileID: 7649607757348848619}
-  - component: {fileID: 8159010226646859736}
   m_Layer: 0
   m_Name: Van wheel rear right
   m_TagString: Untagged
@@ -358,28 +357,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8159010226646859736
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674937240504000816}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2315738319773498150, guid: bcadb4ca94705447eb5df22e69c0cd73, type: 3}
 --- !u!1 &682951485986422168
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +468,89 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5325963853482324189, guid: bcadb4ca94705447eb5df22e69c0cd73, type: 3}
+--- !u!1 &2197058591196306334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8965028350163968346}
+  - component: {fileID: 6265241866673297443}
+  - component: {fileID: 6583971634070651857}
+  m_Layer: 20
+  m_Name: ElementMiniMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8965028350163968346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2197058591196306334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5445550042036298785}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6265241866673297443
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2197058591196306334}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6583971634070651857
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2197058591196306334}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 97961961a98e74c34a420423f2cdac81, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2299496049009848476
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,13 +594,13 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.08
   m_SuspensionSpring:
-    spring: 350000
-    damper: 35000
+    spring: 200000
+    damper: 45000
     targetPosition: 0.5
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -573,7 +633,6 @@ GameObject:
   - component: {fileID: 7466832100894641719}
   - component: {fileID: 895032305927576078}
   - component: {fileID: 8332223547371780489}
-  - component: {fileID: 7265868000051610894}
   m_Layer: 0
   m_Name: Van wheel rear left
   m_TagString: Untagged
@@ -647,28 +706,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7265868000051610894
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3508504580894288282}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 9023467963089980138, guid: bcadb4ca94705447eb5df22e69c0cd73, type: 3}
 --- !u!1 &4533494948131961617
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,13 +747,15 @@ GameObject:
   m_Component:
   - component: {fileID: 5445550042036298785}
   - component: {fileID: 6616114870207080383}
+  - component: {fileID: -8293499529272289741}
   - component: {fileID: 943862473806891308}
   - component: {fileID: 3402321234488194261}
   - component: {fileID: 6528458145506569586}
   - component: {fileID: 6780500426271124785}
+  - component: {fileID: 1248692259740555360}
   m_Layer: 0
   m_Name: Van
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -742,6 +781,7 @@ Transform:
   - {fileID: 3819332627135097541}
   - {fileID: 7989226736287599634}
   - {fileID: 3838710965765266692}
+  - {fileID: 8965028350163968346}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -753,7 +793,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4672953305136086683}
   serializedVersion: 4
-  m_Mass: 1600
+  m_Mass: 2000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -772,6 +812,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8293499529272289741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672953305136086683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822e58b9bb71a49699495e1ec396addf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followCamera: {fileID: 6330608848921756314}
+  virtualCamera: {fileID: 568026978781613153}
+  isStarted: 0
+  isCounting: 0
+  pointC: {x: 0, y: 0, z: 0}
+  impulseC: {x: 0, y: 0, z: 0}
+  normalC: {x: 0, y: 0, z: 0}
+  canvas: {fileID: 0}
+  audioBeep: {fileID: 0}
 --- !u!114 &943862473806891308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,11 +845,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad36d374b7cc4bc9a10ec30c043dca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followCamera: {fileID: 6330608848921756314}
-  virtualCamera: {fileID: 568026978781613153}
-  motorForce: 80
-  breakForce: 80
-  maxSteerAngle: 30
+  isStarted: 0
+  isCounting: 0
+  motorForce: 110
+  breakForce: 110
+  maxSteerAngle: 20
   frontLeftWheelCollider: {fileID: 2779653075036759716}
   frontRightWheelCollider: {fileID: 1323579879707450007}
   rearLeftWheelCollider: {fileID: 5145733227617584343}
@@ -797,6 +858,9 @@ MonoBehaviour:
   frontRightWheelTransform: {fileID: 3512751888202836033}
   rearLeftWheelTransform: {fileID: 7466832100894641719}
   rearRightWheelTransform: {fileID: 5752592076811791128}
+  pointC: {x: 0, y: 0, z: 0}
+  impulseC: {x: 0, y: 0, z: 0}
+  normalC: {x: 0, y: 0, z: 0}
 --- !u!114 &3402321234488194261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,7 +910,7 @@ MonoBehaviour:
   UseHalfFloatPrecision: 0
   InLocalSpace: 0
   Interpolate: 1
-  SlerpPosition: 0
+  SlerpPosition: 1
 --- !u!114 &6780500426271124785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,6 +923,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1248692259740555360
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672953305136086683}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ef5c26795b9af42e793b761e1f463e3d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6324768708625865418
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,13 +1062,13 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.08
   m_SuspensionSpring:
-    spring: 350000
-    damper: 35000
+    spring: 200000
+    damper: 45000
     targetPosition: 0.5
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -1003,7 +1163,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1100,13 +1260,13 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.08
   m_SuspensionSpring:
-    spring: 350000
-    damper: 35000
+    spring: 200000
+    damper: 45000
     targetPosition: 0.5
   m_SuspensionDistance: 0.09
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -1139,7 +1299,6 @@ GameObject:
   - component: {fileID: 2173800966116322998}
   - component: {fileID: 545886902766693027}
   - component: {fileID: 1212857482980988206}
-  - component: {fileID: 8312563148621604311}
   m_Layer: 0
   m_Name: Van wheel front left
   m_TagString: Untagged
@@ -1213,28 +1372,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8312563148621604311
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6866980394936485301}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1609478548403192624, guid: bcadb4ca94705447eb5df22e69c0cd73, type: 3}
 --- !u!1 &8743181134916900517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1383,6 @@ GameObject:
   - component: {fileID: 3512751888202836033}
   - component: {fileID: 3628929010649378662}
   - component: {fileID: 9215459010159135303}
-  - component: {fileID: 8445827618017861464}
   m_Layer: 0
   m_Name: Van wheel front right
   m_TagString: Untagged
@@ -1320,25 +1456,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8445827618017861464
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8743181134916900517}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 657567702521176861, guid: bcadb4ca94705447eb5df22e69c0cd73, type: 3}

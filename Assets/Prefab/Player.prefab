@@ -49,6 +49,7 @@ MonoBehaviour:
     m_InternalValue: 0
   cars:
   - {fileID: 4672953305136086683, guid: 89595346ef86b426c89ca5ea2213bd88, type: 3}
+  - {fileID: 690647304791108694, guid: 9165639801e9a47259cffbad9bb8db4a, type: 3}
   - {fileID: 7670414335896192840, guid: f31746415ce6c42e6a2cf273180f899b, type: 3}
 --- !u!114 &4602397684162527561
 MonoBehaviour:

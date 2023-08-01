@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour
 {
     public int team;
     public int playersCounter;
+    public bool isVan = false;
 
-    public GameObject playerObject;
+    public string winner;
 
     public static GameManager Instance { get; private set; }
     private void Awake()

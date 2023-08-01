@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Target
+  - Canvas
+  - Car
   layers:
   - Default
   - TransparentFX
@@ -15,6 +18,8 @@ TagManager:
   - 
   - 
   - 
+  - Road
+  - Building
   - 
   - 
   - 
@@ -23,12 +28,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - VanMM
+  - PoliceMM
+  - GangMM
+  - TargetMM
   - 
   - 
   - 
